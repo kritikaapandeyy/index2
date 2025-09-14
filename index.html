@@ -7,51 +7,87 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #333;
-      background: url("https://upload.wikimedia.org/wikipedia/commons/3/3a/Hibiscus_flower.jpg"),
+      background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+                  url("https://upload.wikimedia.org/wikipedia/commons/3/3a/Hibiscus_flower.jpg"),
                   url("https://upload.wikimedia.org/wikipedia/commons/1/15/Petunia.jpg"),
                   url("https://upload.wikimedia.org/wikipedia/commons/6/6b/Lilium_candidum.jpg");
-      background-size: 300px, 250px, 300px;
-      background-position: top left, bottom right, center;
-      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-size: cover, 300px, 250px, 300px;
+      background-position: center, top left, bottom right, center;
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
       background-attachment: fixed;
     }
     header {
-      background-color: rgba(255, 192, 203, 0.9);
+      background-color: rgba(255, 182, 193, 0.9);
       text-align: center;
-      padding: 20px;
-      position: relative;
+      padding: 25px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fff;
+      text-shadow: 1px 1px 2px #c44;
     }
     nav {
+      margin-top: 15px;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      margin-top: 10px;
+      gap: 25px;
     }
     nav a {
       text-decoration: none;
-      color: #333;
+      color: #fff;
       font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #fff;
+      color: #c44;
     }
     .tagline {
-      font-size: 24px;
-      margin: 10px 0;
+      font-size: 26px;
+      margin: 15px 0;
+      font-weight: bold;
+      color: #c44;
     }
     .quote {
       font-style: italic;
       color: #555;
       font-size: 16px;
+      margin-top: 5px;
     }
     .section {
-      padding: 40px;
+      background: rgba(255, 255, 255, 0.85);
+      margin: 40px auto;
+      padding: 30px;
+      width: 80%;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #c44;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #c44;
+      color: white;
       text-align: center;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Flower Boutique</h1>
+    <h1>🌸 Flower Boutique 🌸</h1>
     <nav>
       <a href="#">Home</a>
       <a href="#">Shop</a>
@@ -75,6 +111,9 @@
     <h2>Contact Us</h2>
     <p>Email: hello@flowerboutique.com</p>
   </div>
+
+  <footer>
+    <p>&copy; 2025 Flower Boutique | Made with 💖</p>
+  </footer>
 </body>
 </html>
-
